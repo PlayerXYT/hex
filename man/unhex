@@ -1,0 +1,24 @@
+.\" Manpage for unhex
+.TH man 1 "31 October 2024" "1.0" "unhex man page"
+.SH NAME
+unhex \- Converts raw hex data to binary data
+.SH SYNOPSIS
+unhex [input] [output]
+.SH OPTIONS
+input is either a file or "STDIN"
+
+output is either a file, "STDOUT", "STDERR" or blank
+Warning: If output is ommitted, input must end with .hex
+.SH EXAMPLES
+unhex data.bin.hex
+Will read from data.bin.hex and write to data.bin
+
+unhex STDIN STDOUT
+Will read from stdin and print to stdout, reccommended for use with pipes
+.SH SEE ALSO
+hex(1)
+.SH BUGS
+None \- My code is perfect
+.SH COPYRIGHT
+Copyright © 2024 Player_X_YT. License GPLv2+: GNU GPL version 2 or later <https://www.gnu.org/licenses/old-licenses/gpl-2.0.html>.
+This is free software: you are free to change and redistribute it. There is NO WARRANTY, to the extent permitted by law.
