@@ -26,7 +26,7 @@ void convert(FILE* input_file, FILE* output_file) {
 }
 
 void explain_command() {
-		printf("\e[0;7mhex\e[0m converts binary data to raw hex data\nUsage: \e[7mhex [input] [output]\e[0m\ninput is either a file or \e[1mSTDIN\e[0m\noutput is either a file, \e[1mSTDOUT\e[0m, \e[1mSTDERR\e[0m or blank for a .hex file\n\ne.g. \e[7mhex data.bin\e[0m will read from data.bin and write to data.bin.hex\n");
+		printf("\e[0;7mhex\e[0m converts binary data to raw hex data\nUsage: \e[7mhex [input] [output]\e[0m\ninput is either a file or \e[1mSTDIN\e[0m\noutput is either a file, \e[1mSTDOUT\e[0m, \e[1mSTDERR\e[0m or blank for a .hex file\n\e[93mWarning:\e[0m If output is ommitted, input must not be STDIN\n\ne.g. \e[7mhex data.bin\e[0m will read from data.bin and write to data.bin.hex\n");
 }
 
 FILE* generate_output(FILE* input_file, const char* input_file_name) {
